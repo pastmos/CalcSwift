@@ -18,29 +18,40 @@ class ViewController: UIViewController {
         let digit = sender.currentTitle!
         
         if userIsInTheMiddleOfTypyng {
-            let textCurrentlyOnDisplay = display!.text!
-            display!.text  = textCurrentlyOnDisplay + digit
+            let textCurrentlyOnDisplay = display.text!
+            display.text  = textCurrentlyOnDisplay + digit
         }else {
-            display!.text  = digit
+            display.text  = digit
             userIsInTheMiddleOfTypyng = true
         }
         
         
     }
-
+    
+    var displayValue: Double{
+        get {
+            return Double(display.text!)!
+        }
+        set{
+            display.text! = String(newValue)
+        }
+    }
+    
     @IBAction func performOperation(_ sender: UIButton) {
         userIsInTheMiddleOfTypyng = false
         if let mathematicalSymbol = sender.currentTitle {
             switch mathematicalSymbol{
             case "π":
-                display!.text = "3.14"
-                
+                display.text = String(Double.pi)
+            case "√":
+                let operand = Double(display.text!)!
+                display.text = String(sqrt(operand))
             default:
                 break
                 
             }
-
-    }
+            
+        }
     }
     
    
