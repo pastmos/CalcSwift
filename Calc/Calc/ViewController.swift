@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     
     @IBAction func touchClear(_ sender: UIButton) {
         display.text  = "0"
+        brain.clearAll()
+        userIsInTheMiddleOfTypyng = false
     }
     
     var displayValue: Double{

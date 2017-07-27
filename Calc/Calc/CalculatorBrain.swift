@@ -38,7 +38,10 @@ struct CalculatorBrain
     
     
     
-    
+    mutating func clearAll()
+    {
+        pendingBinaryOperation = nil
+    }
     
     mutating func PerformOperation(_ symbol: String)
     {
