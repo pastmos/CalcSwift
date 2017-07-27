@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CED0689A1F2944AA008F1A93 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED068991F2944AA008F1A93 /* CalculatorBrain.swift */; };
 		CEFC2C381F2277EA000EFFE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2C371F2277EA000EFFE8 /* AppDelegate.swift */; };
 		CEFC2C3A1F2277EA000EFFE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2C391F2277EA000EFFE8 /* ViewController.swift */; };
 		CEFC2C3D1F2277EA000EFFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFC2C3B1F2277EA000EFFE8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CED068991F2944AA008F1A93 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		CEFC2C341F2277EA000EFFE8 /* Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFC2C371F2277EA000EFFE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFC2C391F2277EA000EFFE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				CEFC2C391F2277EA000EFFE8 /* ViewController.swift */,
 				CEFC2C3B1F2277EA000EFFE8 /* Main.storyboard */,
+				CED068991F2944AA008F1A93 /* CalculatorBrain.swift */,
 				CEFC2C491F227857000EFFE8 /* Supporting Files */,
 			);
 			path = Calc;
@@ -104,6 +107,7 @@
 				TargetAttributes = {
 					CEFC2C331F2277EA000EFFE8 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8644MY34M6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -144,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED0689A1F2944AA008F1A93 /* CalculatorBrain.swift in Sources */,
 				CEFC2C3A1F2277EA000EFFE8 /* ViewController.swift in Sources */,
 				CEFC2C381F2277EA000EFFE8 /* AppDelegate.swift in Sources */,
 			);
@@ -270,9 +275,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8644MY34M6;
 				INFOPLIST_FILE = Calc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Home.Calc;
+				PRODUCT_BUNDLE_IDENTIFIER = Passt.Calc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -282,9 +288,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8644MY34M6;
 				INFOPLIST_FILE = Calc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Home.Calc;
+				PRODUCT_BUNDLE_IDENTIFIER = Passt.Calc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -309,6 +316,7 @@
 				CEFC2C481F2277EA000EFFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

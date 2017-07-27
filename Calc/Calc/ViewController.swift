@@ -4,7 +4,7 @@
 //
 //  Created by Past on 21.07.17.
 //  Copyright © 2017 Past. All rights reserved.
-//
+
 
 import UIKit
 
@@ -37,24 +37,26 @@ class ViewController: UIViewController {
         }
     }
     
+    private var brain = CalculatorBrain()
+    
     @IBAction func performOperation(_ sender: UIButton) {
-        userIsInTheMiddleOfTypyng = false
-        if let mathematicalSymbol = sender.currentTitle {
-            switch mathematicalSymbol{
-            case "π":
-                displayValue = Double.pi
-            case "√":
-                displayValue = sqrt(displayValue)
-            default:
-                break
-                
-            }
-            
+        if userIsInTheMiddleOfTypyng == true{
+            brain.SetOperand(displayValue)
+            userIsInTheMiddleOfTypyng = false
         }
+        if let mathematicalSymbol = sender.currentTitle {
+             brain.PerformOperation(mathematicalSymbol)
+        }
+    if let result = brain.result{
+        displayValue = result
     }
     
+    }
+
+}
+
    
         
         
         
-}
+
